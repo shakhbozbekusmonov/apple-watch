@@ -123,3 +123,50 @@ a {
 }
 
 /* HEADER STYLES END */
+
+/* HERO STYLES START */
+.hero {
+    padding-top: 140px;
+    padding-bottom: 185px;
+    background-image: url("../images/hero-bg-img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% + 650px) bottom;
+    border-bottom: 2px solid #ddd;
+}
+
+.hero__start {
+    width: 100%;
+    max-width: 495px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #000;
+}
+
+.hero__desc {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #777;
+    border-left: 3px solid #888;
+}
+
+.hero__btn {
+    display: inline-block;
+    padding: 12px 38px;
+    background-color: #EA625C;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* HERO STYLES END */
