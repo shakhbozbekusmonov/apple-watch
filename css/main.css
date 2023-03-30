@@ -78,3 +78,48 @@ ul {
 a {
     text-decoration: none;
 }
+
+/* HEADER STYLES START */
+.site-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+}
+
+.site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-header__wrapper--end {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__nav {
+    margin-right: 40px;
+}
+
+.site-header__nav--list {
+    display: flex;
+}
+
+.site-header__nav--item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.site-header__nav--link {
+    font-size: 15px;
+    line-height: 150%;
+    color: #333;
+}
+
+.site-header__input {
+    font-size: 15px;
+    line-height: 150%;
+    color: #666;
+    border-bottom: 1px solid #333;
+}
+
+/* HEADER STYLES END */
