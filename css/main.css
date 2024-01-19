@@ -80,6 +80,7 @@ a {
 }
 
 hr {
+  border: none;
   height: 2px;
   background-color: #ddd;
 }
@@ -201,5 +202,69 @@ hr {
   line-height: 150%;
 }
 /*---------------- HERO STYLES END -----------------*/
+
+/*----------------- INFO STYLES START ------------------*/
+.info {
+  padding: 70px 0;
+}
+
+.info__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__item {
+  width: 100%;
+  max-width: 280px;
+}
+
+.info__item-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #222;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.info__item-desc {
+  margin-bottom: 20px;
+  color: var(--colorPrimary);
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.info__item::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ddd;
+  box-shadow: 18px 0 0 0 #ddd, 36px 0 0 0 #ddd;
+}
+
+.info__item:last-child::after {
+  display: none;
+}
+
+.info__item-link {
+  display: flex;
+  align-items: center;
+  color: var(--backgroundSecondary);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+}
+
+.info__item-link::before {
+  content: "";
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  height: 3px;
+  background-color: var(--backgroundSecondary);
+}
+/*----------------- INFO STYLES END ------------------*/
 
 /*--------------------------------- MAIN STYLES END ----------------------------------*/
