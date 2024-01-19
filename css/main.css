@@ -79,6 +79,11 @@ a {
   background-color: transparent;
 }
 
+hr {
+  height: 2px;
+  background-color: #ddd;
+}
+
 /*-------------------------------- HEADER STYLES START ------------------------------------*/
 .site-header {
   padding: 30px 0;
@@ -124,3 +129,77 @@ a {
   line-height: 150%;
 }
 /*-------------------------------- HEADER STYLES END ------------------------------------*/
+
+/*--------------------------------- MAIN STYLES START ----------------------------------*/
+.site-main {
+}
+
+/*---------------- HERO STYLES START -----------------*/
+.hero {
+  padding-top: 170px;
+  padding-bottom: 183px;
+
+  background-image: url("../assets/images/watches.png");
+  background-repeat: no-repeat;
+  background-size: 587px;
+  background-position: calc(50% + 665px) 85px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../assets/images/watches@2x.png");
+  }
+}
+
+.hero__wrapper {
+  width: 100%;
+  max-width: 490px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--colorPrimary);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.hero__desc {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  color: var(--colorSecondary);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.hero__desc::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background-color: #888;
+}
+
+.hero-btn {
+  padding: 12px 25px;
+  background-color: var(--backgroundSecondary);
+  border: none;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+/*---------------- HERO STYLES END -----------------*/
+
+/*--------------------------------- MAIN STYLES END ----------------------------------*/
