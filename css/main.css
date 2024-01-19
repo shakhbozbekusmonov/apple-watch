@@ -85,6 +85,48 @@ hr {
   background-color: #ddd;
 }
 
+/* COMMON STYLES START */
+.title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: var(--colorPrimary);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.description {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 40px;
+  color: var(--colorSecondary);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.description::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 100%;
+  background-color: #888;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: var(--backgroundSecondary);
+  border: none;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%;
+}
+/* COMMON STYLES END */
+
 /*-------------------------------- HEADER STYLES START ------------------------------------*/
 .site-header {
   padding: 30px 0;
@@ -162,45 +204,6 @@ hr {
   max-width: 490px;
 }
 
-.hero__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: var(--colorPrimary);
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-.hero__desc {
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding-left: 40px;
-  color: var(--colorSecondary);
-  font-size: 16px;
-  line-height: 150%;
-}
-
-.hero__desc::before {
-  position: absolute;
-  left: 0;
-  content: "";
-  display: inline-block;
-  width: 3px;
-  height: 100%;
-  background-color: #888;
-}
-
-.hero-btn {
-  padding: 12px 25px;
-  background-color: var(--backgroundSecondary);
-  border: none;
-
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 150%;
-}
 /*---------------- HERO STYLES END -----------------*/
 
 /*----------------- INFO STYLES START ------------------*/
@@ -266,5 +269,22 @@ hr {
   background-color: var(--backgroundSecondary);
 }
 /*----------------- INFO STYLES END ------------------*/
+
+/*----------------- WATCH STYLES START ------------------*/
+.watch{
+  padding: 70px 0;
+}
+
+.watch__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.watch__wrapper-start{
+  width: 100%;
+  max-width: 490px;
+}
+/*----------------- WATCH STYLES END ------------------*/
 
 /*--------------------------------- MAIN STYLES END ----------------------------------*/
