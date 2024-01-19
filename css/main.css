@@ -86,6 +86,11 @@ hr {
 }
 
 /* COMMON STYLES START */
+.wrapper {
+  width: 100%;
+  max-width: 490px;
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -125,6 +130,7 @@ hr {
   font-weight: 700;
   line-height: 150%;
 }
+
 /* COMMON STYLES END */
 
 /*-------------------------------- HEADER STYLES START ------------------------------------*/
@@ -199,11 +205,6 @@ hr {
   }
 }
 
-.hero__wrapper {
-  width: 100%;
-  max-width: 490px;
-}
-
 /*---------------- HERO STYLES END -----------------*/
 
 /*----------------- INFO STYLES START ------------------*/
@@ -271,20 +272,52 @@ hr {
 /*----------------- INFO STYLES END ------------------*/
 
 /*----------------- WATCH STYLES START ------------------*/
-.watch{
+.watch {
   padding: 70px 0;
 }
 
-.watch__wrapper{
+.watch__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.watch__wrapper-start{
-  width: 100%;
-  max-width: 490px;
-}
 /*----------------- WATCH STYLES END ------------------*/
+
+/*----------------- HEALTH STYLES START ------------------*/
+.health{
+  padding: 240px 0;
+  background-image: url("../assets/images/runners\ 1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .health {
+    background-image: url("../assets/images/runners\ 1@2x.jpg");
+  }
+}
+}
+
+.health__wrapper{
+  margin-left: auto;
+}
+
+.health__title{
+  color: #fff;
+}
+
+.health__desc{
+  color: #fff;
+}
+
+.health__desc::before{
+  background-color: #fff;
+}
+/*----------------- HEALTH STYLES END ------------------*/
 
 /*--------------------------------- MAIN STYLES END ----------------------------------*/
