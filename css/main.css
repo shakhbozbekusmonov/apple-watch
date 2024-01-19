@@ -1,0 +1,80 @@
+/* ROOT */
+:root {
+  /* colors */
+  --colorPrimary: #000;
+  --colorSecondary: #777;
+  /* backgrounds */
+  --backgroundPrimary: #fff;
+  --backgroundSecondary: #ea625c;
+  /* fonts */
+  --fontPrimary: "Roboto", Helvetica, sans-serif;
+  --fontWeight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--fontPrimary);
+  font-weight: var(--fontWeight);
+  background-color: var(--backgroundPrimary);
+  color: var(--colorPrimary);
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1030px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
